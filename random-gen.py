@@ -1,6 +1,7 @@
 import random
 import string
-import RandomWords
+from random_words import RandomWords
+rw = RandomWords()
 
 
 def random_string(num):
@@ -13,7 +14,8 @@ def random_string(num):
 
 
 def random_words(num):
-    """(number) -> string
+    """(number) -> array
 
-    return a string of x number of random words, x = num"""
-    return 0
+    return an array of x number of random words, x = num"""
+    new_pw = rw.random_words(count=num)
+    return new_pw
